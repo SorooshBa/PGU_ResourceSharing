@@ -11,3 +11,6 @@ this course is based on the most poplular methodologies to manage agile teams. m
 
 ## resources:
 - [Dr. raman ramsin](https://ocw.sharif.ir/course/id/448/)
+
+## images
+![Screenshot from 2024-12-29 18-23-56](https://github.com/user-attachments/assets/e47557e0-ae03-42f5-91ef-6c87ab522fd7)
