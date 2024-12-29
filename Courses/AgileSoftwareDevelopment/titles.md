@@ -19,14 +19,14 @@ this course will lead you to use agile appropriately. not the thing called agile
 
 ## images
 ### course overview in the website
-![Alt text](Courses/AgileSoftwareDevelopment/images/Screenshot from 2024-12-29 18-23-56.png)
+![Alt text](Courses/AgileSoftwareDevelopment/images/18-23-56.png)
 
 ### description in the website
-![Alt text](Courses/AgileSoftwareDevelopment/images/Screenshot from 2024-12-29 21-55-26.png)
+![Alt text](Courses/AgileSoftwareDevelopment/images/21-55-26.png)
 
 ### lecturer overview
-![Alt text](Courses/AgileSoftwareDevelopment/images/Screenshot from 2024-12-29 21-55-35.png)
+![Alt text](Courses/AgileSoftwareDevelopment/images/21-55-35.png)
 ### example of first session of the class
 
-![Alt text](Courses/AgileSoftwareDevelopment/images/Screenshot from 2024-12-29 21-56-08.png)
+![Alt text](Courses/AgileSoftwareDevelopment/images/21-56-08.png)
 
