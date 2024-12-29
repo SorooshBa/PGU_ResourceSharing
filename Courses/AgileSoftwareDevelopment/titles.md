@@ -1,7 +1,12 @@
 # course title: Agile Software Development
-## description:
-this course is based on the most poplular methodologies to manage agile teams. most fucosed on important practices and antipatterns
-## key notes:
+## Description:
+This course is based on the most popular methodologies for managing agile teams. most focused on important practices and antipatterns.<br />
+The main references are taken from the most active people in the industry and their experience in software development, such as Martin Fowler or Scott Ambler.
+Overall, this course is appropriate for industry and academic research. because of the lecturer, he is one the most famous persons who actively works on software development methodologies and agile principles.<br />
+this course will lead you to use agile appropriately. not the thing called agile in most of companies.
+
+
+## keynotes:
 1. an overview of XP
 2. DSDM
 3. DAD
@@ -10,7 +15,7 @@ this course is based on the most poplular methodologies to manage agile teams. m
 6. patterns in Agile
 
 ## resources:
-- [Dr. raman ramsin](https://ocw.sharif.ir/course/id/448/)
+- [Dr. Raman ramsin](https://ocw.sharif.ir/course/id/448/)
 
 ## images
 ![Screenshot from 2024-12-29 18-23-56](https://github.com/user-attachments/assets/e47557e0-ae03-42f5-91ef-6c87ab522fd7)
