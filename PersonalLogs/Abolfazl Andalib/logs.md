@@ -16,6 +16,7 @@
 10367  git add .<br />
 10368  git commit -m "fix(contributos): edit contributors file"<br />
 10369  git push origin main<br />
+10370  git pull origin main, (sync your local and remote repo)<br />
 
 ## total description:
 there is not any weird command but the forman ones. like commit for tracking or git add . to add all files to git.<br />
