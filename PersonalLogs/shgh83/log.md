@@ -20,3 +20,4 @@ git add Courses/"Information Retrieval"/resources.md
 git commit -m "added youtube videos  to my file"
 git add PersonalLogs/shgh83/log.md
 git commit -m "added my last commands to log.md"
+deleted the unwanted files that i commited accidentally
