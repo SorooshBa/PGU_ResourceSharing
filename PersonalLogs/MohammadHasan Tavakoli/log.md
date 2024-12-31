@@ -42,3 +42,9 @@ git commit -m"Update contributers.md"
 git add log.md
 git commit -m "create log.md"
 ```
+---
+**این را هم اضافه کنم که با دستور زیر تمامی مراحل بالا را در گیتهاب push کردم**
+
+```bash
+git push -u origin master
+```
