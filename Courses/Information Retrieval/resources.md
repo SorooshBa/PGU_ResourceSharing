@@ -14,4 +14,11 @@
     https://www.comp.nus.edu.sg/~kanmy/courses/3245_2016/w8.pdf
     https://www.comp.nus.edu.sg/~kanmy/courses/3245_2016/w9.pdf
     https://www.comp.nus.edu.sg/~kanmy/courses/3245_2016/w10.pdf
+## ویدیوهای آموزشی :
+- https://www.youtube.com/watch?v=CVsF7VwHZbc&list=PL0ZVw5-GryEkGAQT7lX7oIHqyDPeUyOMQ&index=3 (این سری ویدیو به زبان انگلیسی است ولی برای رفع اشکال و پیش خوانی مناسب می باشد )
+- https://www.youtube.com/playlist?list=PLBPPeQIiikVgej8IqNaNZrWcjmeEJbVT3 (دوره بازیابی اطلاعات دانشگاه شهید بهشتی) 
+- https://www.youtube.com/playlist?list=PL7TO4klQB2X47wqy7G_XEZfvh9uj9VQlI (Saeed Shahrivari)
+-https://www.youtube.com/playlist?list=PLaZQkZp6WhWwoDuD6pQCmgVyDbUWl_ZUi
+
+
 
