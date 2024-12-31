@@ -4,4 +4,4 @@ cd PersonalLogs
 mkdir shgh83
 cd shgh83
 echo "" > log.md
-
+git add .
