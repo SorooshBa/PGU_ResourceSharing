@@ -15,5 +15,6 @@ and git can't add our file like this we put our file in Double qoute like this
 8-after we add our file we commit it using command 
     git commit -m "added notes in OS in HoesienZR directory" 
 9-and after our changes all are committed it's time to push changes to our directory 
-    "git push origin"
-10- after that we opne a pull request and merge our changes to the main branch :D 
+    "git push --set-upstream origin HoesienZR"
+
+10- after that we open a pull request and merge our changes to the main branch :D 
