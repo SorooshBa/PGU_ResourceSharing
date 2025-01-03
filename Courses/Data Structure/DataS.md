@@ -28,7 +28,15 @@
 - مرتب سازی هرمی (heap sort)
 - مرتب سازی سریع (quick sort)
 
+## جزوه درسی:
+
+- [Analysis Slides](refrence\analysis-slides.pdf")
+
 ## منابع اضافی:
 
 - [Data Structures Tutorial](https://www.geeksforgeeks.org/data-structures/)
 - [Introduction to Data Structures and Algorithms](https://www.w3schools.com/dsa/dsa_intro.php)
+
+## کانال یوتیوب برای آموزش بیشتر:
+
+- [Neon Learn](https://www.youtube.com/@neonlearn)
