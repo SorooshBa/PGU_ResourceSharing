@@ -40,11 +40,7 @@
 # مرتب سازی‌ها:
 
 - مرتب سازی حبابی (bubble sort):
-- ```java
-  import java.io.*;
-  ```
-
-class GFG {
+- ````java class GFG {
 
     // An optimized version of Bubble Sort
     static void bubbleSort(int arr[], int n){
@@ -85,9 +81,9 @@ class GFG {
         bubbleSort(arr, n);
         System.out.println("Sorted array: ");
         printArray(arr, n);
-    }
+    }}```
 
-}```
+  ````
 
 - مرتب سازی ادغامی (merge sort)
 - مرتب سازی انتخابی (selection sort)
