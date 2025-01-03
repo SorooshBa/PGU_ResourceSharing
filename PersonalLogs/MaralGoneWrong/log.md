@@ -78,4 +78,11 @@
 - `git commit -m "added new pdf file " `
 - `git push origin main`
 
+# 9. اضافه کردن عکس
+
+- با دستور زیر در md دو عکس اضافه کردم
+- `![Data Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230706095706/intro-data-structure-%E2%80%93-1.png)`
+
+- `![](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)`
+
 # در آخر یک pull request ارسال کردم
