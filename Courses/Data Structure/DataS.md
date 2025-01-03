@@ -30,5 +30,5 @@
 
 ## منابع اضافی:
 
-- [منبع اول](https://www.geeksforgeeks.org/data-structures/)
-- [منبع دوم](https://www.w3schools.com/dsa/dsa_intro.php)
+- [Data Structures Tutorial](https://www.geeksforgeeks.org/data-structures/)
+- [Introduction to Data Structures and Algorithms](https://www.w3schools.com/dsa/dsa_intro.php)
