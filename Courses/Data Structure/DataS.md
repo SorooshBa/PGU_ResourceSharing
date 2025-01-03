@@ -6,7 +6,8 @@
 
 ## فصل 1: آشنایی با ساختمان داده
 
-- تعریف: ساختمان داده گروهی از عناصر داده است که ساده‌ترین راه را برای ذخیره و انجام اقدامات مختلف بر روی‌داده‌های کامپیوتر را فراهم می‌کند
+- تعریف: ساختمان داده گروهی از عناصر داده است که ساده‌ترین راه را برای ذخیره و انجام اقدامات مختلف بر روی‌داده‌های کامپیوتر را فراهم می‌کند.
+
   ![Data Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230706095706/intro-data-structure-%E2%80%93-1.png)
 
 ### انواع ساختمان داده‌ها:
@@ -22,7 +23,8 @@
 ### انواع داده ساختارها:
 
 - شکل‌های مختلفی برای ذخیره داده وجود دارد که در دوره آموزش ساختمان داده به آن پرداخته‌شده است. در ادامه مروری بر برخی از ساختارهای داده رایج خواهیم داشت.
-- ![](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
+
+![Calssification](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
 
 - **آرایه**:آرایه مجموعه‌ای از اقلام داده‌ای است که در مکان‌های حافظه به‌هم‌پیوسته ذخیره می‌شوند. ایده آرایه این است که چندین مورد از یک نوع را با هم ذخیره کند. این کار محاسبه موقعیت هر عنصر را با افزودن یک افست به یک مقدار پایه، یعنی مکان حافظه اولین عنصر آرایه (که معمولاً بانام آرایه مشخص می‌شود) آسان‌تر می‌کند.
 - **لیست پیوندی**:مانند آرایه‌ها، لیست پیوندی نوعی ساختمان داده خطی به‌حساب می‌آید که در دوره آموزش ساختمان داده مکتب خونه به‌صورت کامل جنبه‌های مختلف آن پوشش داده‌شده است. برخلاف آرایه‌ها، عناصر لیست پیوندی در مکانی پیوسته ذخیره نمی‌شوند. عناصر با استفاده از اشاره‌گر به هم مرتبط می‌شوند.
@@ -185,15 +187,285 @@ class GfG {
   }
 ```
 
+```java
+Output:
+
+Given array is
+12 11 13 5 6 7
+
+Sorted array is
+5 6 7 11 12 13
+
+```
+
 #### مرتب سازی انتخابی (selection sort):
 
-#### مرتب سازی درجی (insertion sort)
+```java
+static void selectionSort(int[] arr){
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
 
-#### مرتب سازی هرمی (heap sort)
+            // Assume the current position holds
+            // the minimum element
+            int min_idx = i;
 
-#### مرتب سازی سریع (quick sort)
+            // Iterate through the unsorted portion
+            // to find the actual minimum
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[min_idx]) {
 
-##
+                    // Update min_idx if a smaller element
+                    // is found
+                    min_idx = j;
+                }
+            }
+
+            // Move minimum element to its
+            // correct position
+            int temp = arr[i];
+            arr[i] = arr[min_idx];
+            arr[min_idx] = temp;
+        }
+    }
+
+    static void printArray(int[] arr){
+        for (int val : arr) {
+            System.out.print(val + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args){
+        int[] arr = { 64, 25, 12, 22, 11 };
+
+        System.out.print("Original array: ");
+        printArray(arr);
+
+        selectionSort(arr);
+
+        System.out.print("Sorted array: ");
+        printArray(arr);
+    }
+```
+
+```java
+- Output: Original vector: 64 25 12 22 11
+  Sorted vector: 11 12 22 25 64
+```
+
+#### مرتب سازی درجی (insertion sort):
+
+```java
+// Java program for implementation of Insertion Sort
+public class InsertionSort {
+    /* Function to sort array using insertion sort */
+    void sort(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 1; i < n; ++i) {
+            int key = arr[i];
+            int j = i - 1;
+
+            /* Move elements of arr[0..i-1], that are
+               greater than key, to one position ahead
+               of their current position */
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+    }
+
+    /* A utility function to print array of size n */
+    static void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; ++i)
+            System.out.print(arr[i] + " ");
+
+        System.out.println();
+    }
+
+    // Driver method
+    public static void main(String args[])
+    {
+        int arr[] = { 12, 11, 13, 5, 6 };
+
+        InsertionSort ob = new InsertionSort();
+        ob.sort(arr);
+
+        printArray(arr);
+    }
+}
+
+```
+
+```java
+- Output:`5 6 11 12 13 `
+```
+
+#### مرتب سازی هرمی (heap sort):
+
+```java
+import java.util.Arrays;
+
+
+
+    // To heapify a subtree rooted with node i
+    // which is an index in arr[].
+    static void heapify(int arr[], int n, int i) {
+
+        // Initialize largest as root
+        int largest = i;
+
+        // left index = 2*i + 1
+        int l = 2 * i + 1;
+
+        // right index = 2*i + 2
+        int r = 2 * i + 2;
+
+        // If left child is larger than root
+        if (l < n && arr[l] > arr[largest]) {
+            largest = l;
+        }
+
+        // If right child is larger than largest so far
+        if (r < n && arr[r] > arr[largest]) {
+            largest = r;
+        }
+
+        // If largest is not root
+        if (largest != i) {
+            int temp = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = temp;
+
+            // Recursively heapify the affected sub-tree
+            heapify(arr, n, largest);
+        }
+    }
+
+    // Main function to do heap sort
+    static void heapSort(int arr[]) {
+        int n = arr.length;
+
+        // Build heap (rearrange array)
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            heapify(arr, n, i);
+        }
+
+        // One by one extract an element from heap
+        for (int i = n - 1; i > 0; i--) {
+
+            // Move current root to end
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            // Call max heapify on the reduced heap
+            heapify(arr, i, 0);
+        }
+    }
+
+    // A utility function to print array of size n
+    static void printArray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    // Driver's code
+    public static void main(String args[]) {
+        int arr[] = {9, 4, 3, 8, 10, 2, 5};
+        heapSort(arr);
+        System.out.println("Sorted array is ");
+        printArray(arr);
+    }
+
+
+```
+
+```java
+- Output:
+  Sorted array is
+  2 3 4 5 8 9 10
+
+```
+
+#### مرتب سازی سریع (quick sort):
+
+```java
+import java.util.Arrays;
+
+
+    // Partition function
+    static int partition(int[] arr, int low, int high) {
+
+        // Choose the pivot
+        int pivot = arr[high];
+
+        // Index of smaller element and indicates
+        // the right position of pivot found so far
+        int i = low - 1;
+
+        // Traverse arr[low..high] and move all smaller
+        // elements to the left side. Elements from low to
+        // i are smaller after every iteration
+        for (int j = low; j <= high - 1; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                swap(arr, i, j);
+            }
+        }
+
+        // Move pivot after smaller elements and
+        // return its position
+        swap(arr, i + 1, high);
+        return i + 1;
+    }
+
+    // Swap function
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    // The QuickSort function implementation
+    static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+
+            // pi is the partition return index of pivot
+            int pi = partition(arr, low, high);
+
+            // Recursion calls for smaller elements
+            // and greater or equals elements
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10, 7, 8, 9, 1, 5};
+        int n = arr.length;
+
+        quickSort(arr, 0, n - 1);
+
+        for (int val : arr) {
+            System.out.print(val + " ");
+        }
+    }
+
+```
+
+```java
+Output
+Sorted Array
+1 5 7 8 9 10
+
+```
 
 ## منابع اضافی:
 
