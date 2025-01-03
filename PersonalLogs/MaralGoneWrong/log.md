@@ -89,9 +89,7 @@
 
 - با دستور زیر کدهای موردنظر را به متن اضافه می‌کنیم.
 
-```java code
-
-```
+- `java code`
 
 - سپس تمام تغییرات را commit و push می‌کنیم.  
   `git commit -a -m "really final one"`
