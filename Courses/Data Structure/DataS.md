@@ -89,7 +89,6 @@
 
 ```java
 
-class GfG {
 
     // Merges two subarrays of arr[].
     // First subarray is arr[l..m]
@@ -184,7 +183,7 @@ class GfG {
         System.out.println("\nSorted array is");
         printArray(arr);
     }
-  }
+
 ```
 
 ```java

@@ -85,4 +85,15 @@
 
 - `![](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)`
 
+# 10. اضافه کردن کد
+
+- با دستور زیر کدهای موردنظر را به متن اضافه می‌کنیم.
+
+```java code
+
+```
+
+- سپس تمام تغییرات را commit و push می‌کنیم.  
+  `git commit -a -m "really final one"`
+
 # در آخر یک pull request ارسال کردم
