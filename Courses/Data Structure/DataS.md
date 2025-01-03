@@ -1,17 +1,15 @@
 # عنوان درس: ساختمان داده
 
-## توضیحات کلی:
+### توضیحات کلی:
 
 مطالب این فایل شامل نکات و جزوات مرتبط با درس ساختمان داده است.
-
-## نکات کلیدی:
 
 ## فصل 1: آشنایی با ساختمان داده
 
 - تعریف: ساختمان داده گروهی از عناصر داده است که ساده‌ترین راه را برای ذخیره و انجام اقدامات مختلف بر روی‌داده‌های کامپیوتر را فراهم می‌کند
   ![Data Structure](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230706095706/intro-data-structure-%E2%80%93-1.png)
 
-# انواع ساختمان داده‌ها:
+### انواع ساختمان داده‌ها:
 
 - ساختمان داده خطی: ساختمان داده خطی که در آن عناصر داده به‌صورت متوالی یا خطی ‌مرتب‌شده‌اند، جایی که هر عنصر به عناصر مجاور قبلی و بعدی خود متصل می‌شود، ساختمان داده خطی نامیده می‌شود. نمونه‌هایی از ساختارهای داده خطی عبارت‌اند از: آرایه، پشته، صف، لیست پیوندی و غیره.
 - ساختمان داده ایستا:
@@ -21,7 +19,7 @@
 - ساختمان داده غیر خطی:
   در ساختارهای داده غیر خطی، عناصر داده به‌صورت متوالی یا خطی قرار نمی‌گیرند. نمونه‌هایی از ساختارهای داده غیرخطی درختان و نمودارها هستند.
 
-# انواع داده ساختارها:
+### انواع داده ساختارها:
 
 - شکل‌های مختلفی برای ذخیره داده وجود دارد که در دوره آموزش ساختمان داده به آن پرداخته‌شده است. در ادامه مروری بر برخی از ساختارهای داده رایج خواهیم داشت.
 - ![](https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg)
@@ -37,9 +35,10 @@
 
 ## فصل 2: انواع مرتب سازی‌ها
 
-# مرتب سازی‌ها:
+### مرتب سازی‌ها:
 
-- مرتب سازی حبابی (bubble sort):
+#### مرتب سازی حبابی (bubble sort):
+
 - ```java class GFG {
 
      static void bubbleSort(int arr[], int n){
@@ -84,11 +83,111 @@
 
   ```
 
-- مرتب سازی ادغامی (merge sort)
-- مرتب سازی انتخابی (selection sort)
-- مرتب سازی درجی (insertion sort)
-- مرتب سازی هرمی (heap sort)
-- مرتب سازی سریع (quick sort)
+#### مرتب سازی ادغامی (merge sort):
+
+``class GfG {
+
+    // Merges two subarrays of arr[].
+    // First subarray is arr[l..m]
+    // Second subarray is arr[m+1..r]
+    static void merge(int arr[], int l, int m, int r)
+    {
+        // Find sizes of two subarrays to be merged
+        int n1 = m - l + 1;
+        int n2 = r - m;
+
+        // Create temp arrays
+        int L[] = new int[n1];
+        int R[] = new int[n2];
+
+        // Copy data to temp arrays
+        for (int i = 0; i < n1; ++i)
+            L[i] = arr[l + i];
+        for (int j = 0; j < n2; ++j)
+            R[j] = arr[m + 1 + j];
+
+        // Merge the temp arrays
+
+        // Initial indices of first and second subarrays
+        int i = 0, j = 0;
+
+        // Initial index of merged subarray array
+        int k = l;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+
+        // Copy remaining elements of L[] if any
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+
+        // Copy remaining elements of R[] if any
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+
+    // Main function that sorts arr[l..r] using
+    // merge()
+    static void sort(int arr[], int l, int r)
+    {
+        if (l < r) {
+
+            // Find the middle point
+            int m = l + (r - l) / 2;
+
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+
+            // Merge the sorted halves
+            merge(arr, l, m, r);
+        }
+    }
+
+    // A utility function to print array of size n
+    static void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; ++i)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+
+    // Driver code
+    public static void main(String args[])
+    {
+        int arr[] = { 12, 11, 13, 5, 6, 7 };
+
+        System.out.println("Given array is");
+        printArray(arr);
+
+        sort(arr, 0, arr.length - 1);
+
+        System.out.println("\nSorted array is");
+        printArray(arr);
+    }}``
+
+#### مرتب سازی انتخابی (selection sort)
+
+#### مرتب سازی درجی (insertion sort)
+
+#### مرتب سازی هرمی (heap sort)
+
+#### مرتب سازی سریع (quick sort)
 
 ##
 
