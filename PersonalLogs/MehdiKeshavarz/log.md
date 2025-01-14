@@ -1,0 +1,2 @@
+git clone https://github.com/SorooshBa/PGU_ResourceSharing.git cd PGU_ResourceSharing > cd PersonalLog mkdir mehdikeshavarz cd  mehdikeshavarz log.md cd.. cd .. cd Courses mkdir DataStruct
+cd.. git add . git commit -m "create log.md and create DataStruct folder and added my username to contributors file" 
