@@ -1,0 +1,38 @@
+آموزش نصب جی تی کی 
+لینک های زیر برای نصب و آموزش کامپایلر هست و اگر دارید نیاز نیست نصب کنید
+برای نصب ترجیحا از لینک دوم استفاده کند
+
+https://virgool.io/@rsharifnasab/mingw-installtion-sfuq3fh15rvw
+https://virgool.io/codenevis/0069-ogytzuwfvirn
+
+برای جی تی کی اول برنامه ام اس وای اس استفادهمیکنیم
+
+https://www.msys2.org/
+
+بعد از نصب کامند زیر رو دونه دونه تایپ یا کپی گنید 
+علامت های دلار اول هر خط رو خود برنامه میزاره و اونارو لازم نیست وارد کنید ولی دلار های دوم به بعد رو باید زد
+
+$ pacman -Syu
+$ pacman -S mingw-w64-x86_64-gtk3
+$ pacman -S mingw-w64-x86_64-gtk4
+$ pacman -Syu
+$ echo $PKG_CONFIG_PATH
+$ export PKG_CONFIG_PATH="مسیر به دست آمده از کامند بالایی"
+$ pkg-config --version
+$ pacman -S pkgconf
+$ pkg-config --version
+$ pkg-config --modversion gtk+-3.0
+$ export PKG_CONFIG_PATH=/path/to/gtk+-3.0-directory/lib/pkgconfig                                     
+$ find / -name gtk+-3.0.pc 2>/dev/null
+مسیر به دست آمده را کپی کنید
+$ pkg-config --variable=pc_path gtk+-3.0
+$ export PKG_CONFIG_PATH=/mingw64/lib/pkconfig/gtk+-3.0.pc
+$ cd /c/Users/morek/Desktop/Projects/C_C++  پوشه ای که فایل سی در آن ذخیره شده
+یکبار ام اس وای اس را ببندید و باز کنید
+$ pkg-config --modversion gtk+-3.0
+$ pacman -S mingw-w64-ucrt-x86_64-toolchain base-devel
+اینتر بزنید
+به اینترنت وصل باشید و ترجیحا فیلتر شکن باز کنید چون بجز نت کتابخونه با بقیه اینترنت ها درست دانلود نمیشد
+$ cd /c/Users/morek/Desktop/Projects/C_C++  پوشه ای که فایل سی در آن ذخیره شده
+$ gcc -Wall $(pkg-config --cflags gtk+-3.0) -o name name.c $(pkg-config --libs gtk+-3.0)
+$ ./name.exe
